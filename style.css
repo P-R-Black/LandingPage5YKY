@@ -36,6 +36,7 @@ header .logo {
     max-width: 500px;
     margin-top: -14%;
     margin-left: -18.5%;
+    z-index: 2;
 }
 
 header ul {
@@ -44,6 +45,7 @@ header ul {
     font-size: 20px;
     margin-right: 70px;
     margin-top: 11px;
+    z-index: 2;
 
 }
 
@@ -58,7 +60,6 @@ header ul li a {
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
-    y-index: 5;
 }
 
 .content {
@@ -72,10 +73,6 @@ header ul li a {
 
 }
 
-/*h2 {
-    text-align: left;
-    letter-spacing: 6px;
-}*/
 
 .content .textBox {
     position: relative;
@@ -168,27 +165,28 @@ header ul li a {
 .sci {
     position: absolute;
     top: 45%;
-    right: 10%;
+    right: 13%;
     transform: translateY(-50%);
     /*display: flex; */
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
 }
 
 .sci li {
     list-style: none;
+
 }
 
 .sci li a {
     display: inline-block;
-    filter: invert(1);
     margin: 5px 0;
     transform: scale(0.6);
+    color: red;
 }
 
 .fab {
-    font-size: 30px;
-    padding: 20px;
-    color: red;
+    font-size: 60px;
+    padding: 10px;
 }
